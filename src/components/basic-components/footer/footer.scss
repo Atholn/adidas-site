@@ -1,3 +1,16 @@
-footer{
+.footer{
+  display: flex;
+  flex-wrap: wrap;
   background-color: #616363;
+  border-top: 1px solid #616363;
+  color: #c8cbcc;
+  padding: 10px 0;
+  box-sizing: border-box;
+
+  
+  @media (min-width: 960px){
+    flex-basis: auto;
+    justify-content: center;
+    display: none;
+  }
 }
