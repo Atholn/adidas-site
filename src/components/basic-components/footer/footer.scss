@@ -1,16 +1,17 @@
 .footer{
   display: flex;
   flex-wrap: wrap;
-  background-color: #616363;
+  background-color: #282c31;
   border-top: 1px solid #616363;
   color: #c8cbcc;
   padding: 10px 0;
   box-sizing: border-box;
 
-  
   @media (min-width: 960px){
-    flex-basis: auto;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    display: none;
+    margin: 0 auto;
+    text-align: center;
   }
 }
