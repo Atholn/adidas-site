@@ -5,7 +5,7 @@ interface FooterSiteItemComponent {
   footerSite: FooterSite;
 } 
 
-const FooterSiteItem: React.FC<FooterSiteItemComponent> = ({ 
+const FooterSiteItem : React.FC<FooterSiteItemComponent> = ({ 
   footerSite 
 } : FooterSiteItemComponent) => {
 
