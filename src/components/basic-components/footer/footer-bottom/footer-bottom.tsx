@@ -1,9 +1,9 @@
 import "./footer-bottom.scss";
 import FooterSiteItem from "./footerSiteItem";
-import { FooterSite } from "./interfaces/footer-site";
+import { FooterSiteName } from "../models/footer-site";
 
 const FooterBottom : React.FC = () => {
-  const footerSites: Array<FooterSite> = [
+  const footerSites: Array<FooterSiteName> = [
     {
       name: "Adidas",
       translation: "Adidas",

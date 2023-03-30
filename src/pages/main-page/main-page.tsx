@@ -5,8 +5,7 @@ import Header from "../../components/basic-components/header";
 function MainPage() {
   return <div>
     <Header/>
-    main
-    <Footer/> 
+    <Footer/>
   </div>
 }
 

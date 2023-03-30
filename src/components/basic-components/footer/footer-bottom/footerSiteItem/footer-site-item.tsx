@@ -1,8 +1,8 @@
-import { FooterSite } from "../interfaces/footer-site";
+import { FooterSiteName } from "../../models/footer-site";
 import "./footer-site-item.scss";
 
 interface FooterSiteItemComponent {
-  footerSite: FooterSite;
+  footerSite: FooterSiteName;
 } 
 
 const FooterSiteItem : React.FC<FooterSiteItemComponent> = ({ 
