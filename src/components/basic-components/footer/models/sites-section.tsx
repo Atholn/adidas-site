@@ -9,3 +9,11 @@ export class SitesSection {
     this.sites = sites;
   }
 }
+
+export class SiteColumn {
+  sitesSections: SitesSection[];
+
+  constructor(sitesSections: SitesSection[]) {
+    this.sitesSections = sitesSections;
+  }
+}
