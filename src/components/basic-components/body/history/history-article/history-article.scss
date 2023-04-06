@@ -1,0 +1,17 @@
+.article{
+
+  flex: 0 1 50%;
+
+  
+  h2{
+    height: 126px;
+    font-size: 36px;
+    text-align: left;
+    text-transform: unset;
+    letter-spacing: .02em;
+    max-width: 420px;
+  }
+  .article-content{
+    margin-top: 20px;
+  }
+}
