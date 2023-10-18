@@ -7,6 +7,7 @@ import MainPage from './pages/main-page/main-page';
 function App() {
   return (
     <div className="App">
+      back
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
