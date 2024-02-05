@@ -1,5 +1,4 @@
 import { Article } from "../models/history";
-import HistoryArticle from "./history-article";
 import "./history.scss";
 
 
@@ -18,14 +17,20 @@ const History : React.FC = () => {
 
   return (
     <div className="container">
-      <div className="row">
-        {
-          historyArticles.map((article) => (
-            <HistoryArticle
-              article={article}
-            />
-          ))
-        }
+      <div className="articles">
+        <h1>
+          {firstArticleTitle}
+        </h1>
+        <p>
+          {firstArticleContent}
+        </p>
+        <h1>
+          {secondArticleTitle}
+        </h1>
+        <p>
+          {secondArticleContent}
+        </p>
+
       </div>
     </div>
   );
