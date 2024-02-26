@@ -1,0 +1,26 @@
+.newsletter-container{
+  padding: 40px;
+  text-align: center;
+  background-color: rgb(237, 231, 52);
+
+  font-size: 30px;
+  font-weight: 700;
+
+  display: flex;
+  flex-direction: column;
+
+  .register-button{
+    background-color: black;
+    color: white;
+    height: 50px;
+    padding: 0;
+    transform: translate(-3px, -3px);
+    border-color: black;
+    border: none;
+
+    box-shadow: 4px 4px 0px 2px rgb(237, 231, 52),
+                6px 6px 0px 2px rgb(0, 0, 0);
+
+
+  }
+}
