@@ -1,26 +1,44 @@
 
 .container{
-
+  position: relative;
   display: flex;
   flex-wrap: wrap;
+  box-sizing: border-box;
 
   margin-left: 60px;
   margin-right: 60px;
-  margin-top: 60px;
 
+  padding-top: 40px;
+  padding-bottom: 40px;
 
   .articles{
+    column-count: 2;
+    column-gap: 40px;
+
+    white-space: pre-wrap;
+    
+    h1, h2{
+      font-size: 28px;
+      padding-top: 0px;
+      margin-top: 0px;
+      margin-bottom: 10px;
+    }
+
+    p{
+      margin-top: 0;
+      padding-top: 0;
+      font-size: 16px;
+      font-style: normal;
+    }
     float: left;
     padding: 0 2px;
     display: flex 0 1;
 
     box-sizing: border-box;
-    column-count: 2;
     text-align: start;
+
     @media (max-width: 960px){
       column-count: 1;
     }
   }
-
-
 }

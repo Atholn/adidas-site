@@ -8,7 +8,7 @@ const Body : React.FC = () => {
   return (
     <div className="body">
 
-      <div className="" id="9">
+      <div className="history" id="">
         <History/>
       </div>
     </div>
