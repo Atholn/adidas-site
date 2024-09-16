@@ -1,30 +1,33 @@
-import { render } from "@testing-library/react";
+import React, { useEffect, useState } from "react";
 import "./header.scss";
-import { useState } from "react";
 
-function Header() {
-  const [show, toggleShow] = useState(true);
-  let xD:boolean = false;
+const Header: React.FC = () => {
+  const [isCollapsed, setIsCollapsed] = useState<boolean>(true);
+  const [height, setHeight] = useState<number>(0);
 
-  const handleUrlSite = () => {
-    toggleShow(!show)
+  const toggleCollapse = (): void => {
+
+    setIsCollapsed((prev) => !prev);
   };
 
-  return <div className="header">
-    <div>
-      {show && 
-        <a onClick={handleUrlSite}>
-          DARMOWE ZWROTY I DOSTAWA
-        </a>
-      } 
+  useEffect(() => {
+    setHeight(isCollapsed ? 0 : 300);
+    document.body.style.overflow = isCollapsed ? "visible" : "hidden";
+  }, [isCollapsed]);
 
-      {!show && 
-        <a onClick={handleUrlSite}>
-          DARMOWE ZWROTY I DOSTAWA2222222222222
-        </a>
-      }
+  return (
+    <div className="header">
+      <div className="header-collapsed">
+        <a onClick={toggleCollapse}>DARMOWE ZsWROTYsadasd I DOSTAWA</a>
+      </div>
+      <div className="header-expanded" style={{ height: `${height}px` }}>
+        <div className="header-expanded-content">
+          <a onClick={toggleCollapse}>DARMOWE ZWROTY I DOSTAsWA2222222222222</a>
+        </div>
+        {!isCollapsed && <div className="filler" onClick={toggleCollapse}></div>}
+      </div>
     </div>
-  </div>
-}
+  );
+};
 
 export default Header;
